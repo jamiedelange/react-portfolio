@@ -34,23 +34,23 @@ function Navigation(props) {
   }
 
   return (
-    <header>
-      <h1>
-        <a href="/">Jamie de Lange</a>
+    <header  className="flex-row">
+      <h1 className="title">
+        <a href="/">JAMIE DE LANGE</a>
       </h1>
-      <nav>
+      <nav className="nav">
         <ul className="flex-row">
           <li className="mx-2">
-            <a href="#about" onClick={() => selectAbout()}>About me</a>
+            <a className="nav1" href="#about" onClick={() => selectAbout()}>About me</a>
           </li>
           <li className="mx-2">
-            <a href="#portfolio" onClick={() => selectPortfolio()}>Portfolio</a>
+            <a className="nav2" href="#portfolio" onClick={() => selectPortfolio()}>Portfolio</a>
           </li>
           <li className="mx-2">
-            <a href="#contact" onClick={() => selectContact()}>Contact</a>
+            <a className="nav3" href="#contact" onClick={() => selectContact()}>Contact</a>
           </li>
           <li className="mx-2">
-            <a href="#resume" onClick={() => selectResume()}>Resume</a>
+            <a className="nav4" href="#resume" onClick={() => selectResume()}>Resume</a>
           </li>
         </ul>
       </nav>
