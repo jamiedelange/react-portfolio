@@ -33,7 +33,7 @@ function Portfolio() {
                 <div className="grid-row">
                     <div className="grid-item">
                         <a>
-                            <img className="img-thumbnail" src={`${ss3}`}></img>
+                            <img className="img-thumbnail" src={`${ss6}`}></img>
                             <h3>item 3</h3>
                             <a><i></i></a>
                         </a>
@@ -56,7 +56,7 @@ function Portfolio() {
                     </div>
                     <div className="grid-item">
                         <a>
-                            <img className="img-thumbnail" src={`${ss6}`}></img>
+                            <img className="img-thumbnail" src={`${ss3}`}></img>
                             <h3>item 6</h3>
                             <a><i></i></a>
                         </a>
