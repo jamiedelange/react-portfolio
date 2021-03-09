@@ -17,7 +17,6 @@ main {
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
-
 }
 
 * {
@@ -191,6 +190,30 @@ nav  li {
 .nav4:hover {
   background-color: var(--quarternary);
 }
+.navActive1 {
+  margin-right: var(--spacing-two);
+  margin-left: var(--spacing-two);
+  background-color: var(--primary);
+  list-style-type: none;
+}
+.navActive2 {
+  margin-right: var(--spacing-two);
+  margin-left: var(--spacing-two);
+  background-color: var(--secondary);
+  list-style-type: none;
+}
+.navActive3 {
+  margin-right: var(--spacing-two);
+  margin-left: var(--spacing-two);
+  background-color: var(--tertiary);
+  list-style-type: none;
+}
+.navActive4 {
+  margin-right: var(--spacing-two);
+  margin-left: var(--spacing-two);
+  background-color: var(--quarternary);
+  list-style-type: none;
+}
 
 textarea {
 	width: 600px;
@@ -199,7 +222,7 @@ textarea {
 	padding: 5px;
 }
 
-#about {
+#about1 {
   margin: 0rem 5rem;
 }
 
@@ -245,7 +268,7 @@ textarea {
   border-style: none;
   height: 24px;
   width: 24px;
-  margin-left: 1rem;
+  margin: 0 0 0 1rem;
 }
 .icon-p:hover {
   opacity: 80%;
@@ -444,8 +467,4 @@ a {
 	padding: 2px 4px;
 	margin-left: -2px;
 	margin-right: -2px;
-}
-
-.navActive {
-  color: var(--secondary);
 }

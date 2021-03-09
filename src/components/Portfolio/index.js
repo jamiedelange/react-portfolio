@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../Footer';
 import ss1 from '../../assets/1.png'
 import ss2 from '../../assets/2.png'
 import ss3 from '../../assets/3.png'
@@ -101,7 +100,6 @@ function Portfolio() {
                     </div>
                 </div>
             </div>
-            <Footer></Footer>
         </section>
     )
 }

@@ -3,12 +3,12 @@ import React from "react";
 function Navigation(props) {
   const {
     aboutSelected,
-    setAboutSelected,
     portfolioSelected,
-    setPortfolioSelected,
     contactSelected,
-    setContactSelected,
     resumeSelected,
+    setAboutSelected,
+    setPortfolioSelected,
+    setContactSelected,
     setResumeSelected,
   } = props;
 
@@ -44,17 +44,17 @@ function Navigation(props) {
       </h1>
       <nav className="nav">
         <ul className="flex-row">
-          <li className={`mx-2 ${selectAbout && 'navActive'}`}>
-            <a className="nav1" href="#about" onClick={() => setAboutSelected(true)}>About me</a>
+          <li className={`${aboutSelected ? 'navActive1' : 'mx-2 nav1'}`}>
+            <a href="#about" onClick={() => selectAbout()}>About me</a>
           </li>
-          <li className="mx-2">
-            <a className="nav2" href="#portfolio" onClick={() => selectPortfolio()}>Portfolio</a>
+          <li className={`${portfolioSelected ? 'navActive2' : 'mx-2 nav2'}`}>
+            <a href="#portfolio" onClick={() => selectPortfolio()}>Portfolio</a>
           </li>
-          <li className="mx-2">
-            <a className="nav3" href="#contact" onClick={() => selectContact()}>Contact</a>
+          <li className={`${contactSelected ? 'navActive3' : 'mx-2 nav3'}`}>
+            <a href="#contact" onClick={() => selectContact()}>Contact</a>
           </li>
-          <li className="mx-2">
-            <a className="nav4" href="#resume" onClick={() => selectResume()}>Resume</a>
+          <li className={`${resumeSelected ? 'navActive4' : 'mx-2 nav4'}`}>
+            <a href="#resume" onClick={() => selectResume()}>Resume</a>
           </li>
         </ul>
       </nav>

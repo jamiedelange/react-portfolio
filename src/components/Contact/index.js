@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
-import Footer from '../Footer';
 
 function ContactForm() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -11,7 +10,7 @@ function ContactForm() {
             const isValid = validateEmail(e.target.value);
             console.log(isValid);
             if (!isValid) {
-                setErrorMessage('Your email is invalid.');
+                setErrorMessage('your email is invalid.');
             } else {
                 setErrorMessage('');
             }
@@ -55,7 +54,6 @@ function ContactForm() {
                 )}
                 <button type="submit">Submit</button>
             </form>
-            <Footer></Footer>
         </section>
     )
 }

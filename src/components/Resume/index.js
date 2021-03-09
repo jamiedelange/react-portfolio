@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../Footer';
 
 function Resume() {
     return (
@@ -29,13 +28,13 @@ function Resume() {
                         <li>SQL</li>
                         <li>NoSQL</li>
                         <li>MongoDB</li>
+                        <li>Mongoose</li>
                         <li>MySQL</li>
                         <li>Node.js</li>
                         <li>Express.js</li>
                     </ul>
                 </div>
             </div>
-            <Footer></Footer>
         </section>
     )
 }
