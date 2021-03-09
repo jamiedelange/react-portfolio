@@ -5,7 +5,6 @@ import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import MainPage from "./components/MainPage";
 import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
 
 function App() {
   const [aboutSelected, setAboutSelected] = useState(false);

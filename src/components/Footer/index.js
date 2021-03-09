@@ -9,13 +9,13 @@ function Footer() {
             <nav>
                 <ul className="footer">
                     <li className="footer-li">
-                        <img src={`${githubIcon}`} alt="github icon"></img>
+                        <img className="icon" src={`${githubIcon}`} alt="github icon"></img>
                     </li>
                     <li className="footer-li">
-                        <img src={`${linkedinIcon}`} alt="linkedin icon"></img>
+                        <img className="icon" src={`${linkedinIcon}`} alt="linkedin icon"></img>
                     </li>
                     <li className="footer-li">
-                        <img src={`${stackoverflowIcon}`} alt="stackoverflow icon"></img>
+                        <img className="icon" src={`${stackoverflowIcon}`} alt="stackoverflow icon"></img>
                     </li>
                 </ul>
             </nav>

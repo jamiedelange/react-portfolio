@@ -33,19 +33,19 @@ function ContactForm() {
     }
 
     return (
-        <section>
+        <section className="form-box">
             <h2 className="contact-header">Contact Me</h2>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div className="contact-field-div">
-                    <label htmlFor="name">Name:</label>
+                    <label htmlFor="name">Name: </label>
                     <input type="text" defaultValue={name} onBlur={handleChange} name="name"></input>
                 </div>
                 <div className="contact-field-div">
-                    <label htmlFor="email">E-mail address:</label>
+                    <label htmlFor="email">E-mail address: </label>
                     <input type="email" defaultValue={email} onBlur={handleChange} name="email"></input>
                 </div>
                 <div className="contact-field-div">
-                    <label htmlFor="message">Message:</label>
+                    <label htmlFor="message">Message: </label>
                     <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5"></textarea>
                 </div>
                 {errorMessage && (
