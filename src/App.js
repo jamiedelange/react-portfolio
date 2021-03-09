@@ -33,7 +33,7 @@ function App() {
       ) : (
         <div></div>
       )}
-      {aboutSelected ? <About></About> : <div></div>}
+      {aboutSelected ? <About></About> : <div></div>} 
       {portfolioSelected ? <Portfolio></Portfolio> : <div></div>}
       {contactSelected ? <Contact></Contact> : <div></div>}
       {resumeSelected ? <Resume></Resume> : <div></div>}

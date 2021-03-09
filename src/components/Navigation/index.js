@@ -2,9 +2,13 @@ import React from "react";
 
 function Navigation(props) {
   const {
+    aboutSelected,
     setAboutSelected,
+    portfolioSelected,
     setPortfolioSelected,
+    contactSelected,
     setContactSelected,
+    resumeSelected,
     setResumeSelected,
   } = props;
 
@@ -40,8 +44,8 @@ function Navigation(props) {
       </h1>
       <nav className="nav">
         <ul className="flex-row">
-          <li className="mx-2">
-            <a className="nav1" href="#about" onClick={() => selectAbout()}>About me</a>
+          <li className={`mx-2 ${selectAbout && 'navActive'}`}>
+            <a className="nav1" href="#about" onClick={() => setAboutSelected(true)}>About me</a>
           </li>
           <li className="mx-2">
             <a className="nav2" href="#portfolio" onClick={() => selectPortfolio()}>Portfolio</a>
